@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webfonts/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- <div class="w-75 mx-auto py-5">
+        <div class="position-relative">
+            <input type="text" class="form-control">
+        <label for="" class="position-absolute top-50 translate-middle-y">user name</label>
+        </div>
+
+    </div> -->
+
+    <!-- hagebha gahza mn bootstrap  -->
+     <div class="w-75 mx-auto py-5">
+<div class="form-floating mb-3">
+  <input oninput="validateNameInput()" type="text" class="form-control border-0 border-bottom" id="productName" placeholder="product name">
+  <label for="productName">Product Name:</label>
+</div>
+<p id="msgName" class="alert alert-danger d-none">you must enter from 3 to  9 letter should contain only letters </p>
+<div class="form-floating mb-3">
+  <input oninput="validatePriceInput()" type="number" class="form-control border-0 border-bottom" id="productPrice" placeholder="product price">
+  <label for="productPrice">Product price:</label>
+</div>
+<p id="msgPrice" class="alert alert-danger d-none">you must enter 1 number or more  </p>
+
+<div class="form-floating mb-3">
+  <input oninput="validateCategoryInput()" list="category" type="text" class="form-control border-0 border-bottom" id="productCategory" placeholder="product category">
+  <label for="productCategory">Product category:</label>
+
+  <datalist id="category">
+    <option value="TV"></option>
+    <option value="mobiles"></option>
+    <option value="laptops"></option>
+    <option value="screens"></option>
+</datalist>
+</div>
+<p id="msgCategory" class="alert alert-danger d-none">enters just available categories   </p>
+
+
+
+<div class="form-floating mb-3">
+  <textarea type="text" class="form-control border-0 border-bottom" id="productDescription" placeholder="product Description"></textarea>
+  <label for="productDescription">Product Description:</label>
+</div>
+
+<div class="form-floating mb-3">
+  <input accept="imgs/*" type="file" class="form-control border-0 border-bottom" id="productImage" placeholder="product Image">
+  <label for="productImage">Product Image:</label>
+</div>
+
+<button id="addBtn" onclick="addProduct();" class="btn btn-info text-white">Add Product</button>
+<button id="updateBtn" onclick="updateProduct();" class="btn btn-warning text-white d-none">update Product</button>
+     </div>
+
+     <div class="container">
+      <input id="searchInput" oninput="searchProduct();" class="form-control my-3" placeholder="search by name " type="text">
+        <div id="rowData" class="row py-5">
+          
+        </div>
+
+     </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
