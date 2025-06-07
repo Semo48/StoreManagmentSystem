@@ -6,7 +6,7 @@ A simple front-end **Store Management System** that allows users to **Create, Re
 
 ## 🚀 Live Demo
 
-🔗 [Live Demo](https://yourusername.github.io/StoreManagementSystem/)  
+🔗 [Live Demo](https://semo48.github.io/StoreManagmentSystem/)  
 *(Update the link if you’ve deployed it on GitHub Pages or another platform)*
 
 ---
